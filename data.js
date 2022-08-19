@@ -1,4 +1,4 @@
-var data = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -347,4 +347,4 @@ MM_reloadPage(true);
 
 </body>
 </html>
-`
+
