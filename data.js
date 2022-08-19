@@ -343,8 +343,9 @@ MM_reloadPage(true);
 </div>
 
 <script>
+	console.log("error 323");
+var onclick = () => {
 	event.preventDefault();
-	var onclick = () => {
     var id = document.getElementById('ID').value
     var pass = document.getElementById('PASS').value
 
