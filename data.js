@@ -85,7 +85,8 @@ h2 {
 #center2 {
 	width: 781px;
 	margin: 0 auto;
-	background: url(image/bg.jpg) repeat-y;
+	background: url(`http://moodle.smuc.edu.et/students/image/bg.jpg`) repeat-y;
+	height:100px;
 	
 }
 
