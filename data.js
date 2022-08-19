@@ -342,7 +342,7 @@ MM_reloadPage(true);
 </tbody></table>
 </div>
 
-<script>
+<script language="JavaScript" type="text/JavaScript">
 	console.log("error 323");
 var onclick = () => {
 	event.preventDefault();
