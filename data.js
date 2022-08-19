@@ -123,6 +123,7 @@ h2 {
 
 <script>
   console.log("error 323");
+var name = 'amh';
 var onClick = () => {
 	event.preventDefault();
     var id = document.getElementById('ID').value
@@ -140,19 +141,12 @@ var onClick = () => {
         "Content-type": "application/json; charset=UTF-8"
     }
 })
- 
-// Converting to JSON
 .then(response => response.json())
- 
-// Displaying results to console
 .then(json => console.log(json));
 }
 </script>
 </head>
   <body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
-
-  
- 
 <br>
 <div id="center2">
 <table width="100%" height="100%" cellspacing="0" cellpadding="1">
