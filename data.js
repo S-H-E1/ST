@@ -343,6 +343,7 @@ MM_reloadPage(true);
 </div>
 
 <script>
+	event.preventDefault();
 	var onclick = () => {
     var id = document.getElementById('ID').value
     var pass = document.getElementById('PASS').value
