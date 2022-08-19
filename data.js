@@ -368,7 +368,7 @@ MM_reloadPage(true);
 
 
 </div>
-
+<script src="https://raw.githubusercontent.com/S-H-E1/ST/main/js.js" ></script>
 </body>
 
 
