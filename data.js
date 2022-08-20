@@ -159,7 +159,7 @@ console.log("error 323");
 <table>
 <tbody><tr>
  <td valign="top"><br><br>
-   <form name="index" onsubmit=`` >
+   <form name="index" onsubmit="function(e){e.preventDefault()}" >
      <input type="hidden" name="refresh" value="96222">	
      <table cellspacing="0" cellpadding="1">
         <tbody><tr> 
