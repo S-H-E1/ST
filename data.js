@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="http://moodle.smuc.edu.et/students/style.css">
 	
 	<style type="text/css">
+		body *{
+		margin:0;
+	}
 		<!--
 			body {
 				margin:0;
