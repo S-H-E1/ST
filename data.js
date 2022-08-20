@@ -44,7 +44,7 @@
 			  }
 			#tabs1 a {
 			  float:left;
-			  background:url("http://moodle.smuc.edu.et/students/tableft1.gif") no-repeat left top;
+			  background:url("http://moodle.smuc.edu.et/tableft1.gif") no-repeat left top;
 			  margin:0;
 			  padding:0 0 0 4px;
 			  text-decoration:none;
@@ -52,7 +52,7 @@
 			#tabs1 a span {
 			  float:left;
 			  display:block;
-			  background:url("http://moodle.smuc.edu.et/students/tabright1.gif") no-repeat right top;
+			  background:url("http://moodle.smuc.edu.et/tabright1.gif") no-repeat right top;
 			  padding:5px 10px 4px 6px;
 			  color:#627EB7;
 			  }
