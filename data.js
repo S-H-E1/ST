@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moodle.smuc.edu.et/students</title>
-	<link rel="stylesheet" href="http:/moodle.smuc.edu.et/students/style.css">
+	<link rel="stylesheet" href="../students/style.css">
 	
 	<style type="text/css">
 		<!--
@@ -44,7 +44,7 @@
 			  }
 			#tabs1 a {
 			  float:left;
-			  background:url("http://moodle.smuc.edu.et/tableft1.gif") no-repeat left top;
+			  background:url("../students/tableft1.gif") no-repeat left top;
 			  margin:0;
 			  padding:0 0 0 4px;
 			  text-decoration:none;
@@ -52,7 +52,7 @@
 			#tabs1 a span {
 			  float:left;
 			  display:block;
-			  background:url("http://moodle.smuc.edu.et/tabright1.gif") no-repeat right top;
+			  background:url("../students/tabright1.gif") no-repeat right top;
 			  padding:5px 10px 4px 6px;
 			  color:#627EB7;
 			  }
