@@ -3,14 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moodle.smuc.edu.et/students/</title>
-	<link rel="stylesheet" href="http://moodle.smuc.edu.et/students/style.css">
+    <title>Document</title>
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/S-H-E1/ST/main/style.css">
 	
 	<style type="text/css">
-		#center1 {
-			display:grid;}
-		#center2{
-			display:grid}
 		<!--
 			body {
 				margin:0;
@@ -48,7 +44,7 @@
 			  }
 			#tabs1 a {
 			  float:left;
-			  background:url("tableft1.gif") no-repeat left top;
+			  background:url("http://moodle.smuc.edu.et/tableft1.gif") no-repeat left top;
 			  margin:0;
 			  padding:0 0 0 4px;
 			  text-decoration:none;
@@ -56,7 +52,7 @@
 			#tabs1 a span {
 			  float:left;
 			  display:block;
-			  background:url("tabright1.gif") no-repeat right top;
+			  background:url("http://moodle.smuc.edu.et/tabright1.gif") no-repeat right top;
 			  padding:5px 10px 4px 6px;
 			  color:#627EB7;
 			  }
@@ -79,7 +75,7 @@
 			  }
 		-->
 	</style>
-
+	
 	<script>
 	console.log("error 323");
 		var name = "amh";
@@ -109,6 +105,7 @@
 	}
 	</script>
 </head>
+<script>console.log('kira')</script>
 <body style="margin: 0px !important;background-color: white;" data-new-gr-c-s-check-loaded="8.901.0" data-gr-ext-installed="" background="http://moodle.smuc.edu.et/students/image/bg.jpg">
 
 <br>
@@ -164,7 +161,7 @@ else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.r
 }
 MM_reloadPage(true);
 //-->
-</script>
+</>
 
 
 
@@ -225,8 +222,8 @@ MM_reloadPage(true);
   </tr>
 </tbody></table>
    <table>
-    <tbody><tr><td><img src="image/line1.jpg" width="771" height="2"></td></tr>
-    <tr><td><img src="image/line1.jpg" width="771" height="2"></td></tr>
+    <tbody><tr><td><img src="http://moodle.smuc.edu.et/students/image/line1.jpg" width="771" height="2"></td></tr>
+    <tr><td><img src="http://moodle.smuc.edu.et/students/image/line1.jpg" width="771" height="2"></td></tr>
     </tbody></table>
   <table width="100%">
   <tbody><tr> 
@@ -247,8 +244,8 @@ MM_reloadPage(true);
   </tr>
 </tbody></table>
    <table width="100%">
-    <tbody><tr><td><img src="image/line1.jpg" width="771" height="2"></td></tr>
-    <tr><td><img src="image/line1.jpg" width="771" height="2"></td></tr>
+    <tbody><tr><td><img src="http://moodle.smuc.edu.et/students/image/line1.jpg" width="771" height="2"></td></tr>
+    <tr><td><img src="http://moodle.smuc.edu.et/students/image/line1.jpg" width="771" height="2"></td></tr>
     </tbody></table>
 
 <table width="100%">
