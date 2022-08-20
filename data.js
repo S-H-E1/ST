@@ -174,7 +174,7 @@ console.log("error 323");
  
      <table align="center">
        <tbody><tr>
-        <td align="center"><br><br><button type="image" onclick("onclick()") src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td align="center"><br><br><input type="image" onclick("onclick()") src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
       </tr>
       <tr>
         <td><div><a href="index.php"><font color="#627EB7"><u></u></font></a></div></td>
