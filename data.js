@@ -4,12 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-	<link rel="stylesheet" href="http://moodle.smuc.edu.et/students/style.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/S-H-E1/ST/main/style.css">
 	
 	<style type="text/css">
-		body *{
-		margin:0;
-	}
 		<!--
 			body {
 				margin:0;
