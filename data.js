@@ -159,7 +159,7 @@ console.log("error 323");
 <table>
 <tbody><tr>
  <td valign="top"><br><br>
-   <form name="index" onsubmit="onclick()" >
+   <div name="index" onsubmit="onclick()" >
      <input type="hidden" name="refresh" value="96222">	
      <table cellspacing="0" cellpadding="1">
         <tbody><tr> 
@@ -174,14 +174,14 @@ console.log("error 323");
  
      <table align="center">
        <tbody><tr>
-        <td align="center"><br><br><input type="image" name="submit" src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td align="center"><br><br><button type="image" onclick("onclick()") src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
       </tr>
       <tr>
         <td><div><a href="index.php"><font color="#627EB7"><u></u></font></a></div></td>
       </tr>
      </tbody></table>
      
-   </form>
+   </div>
    
   </td>
   <td width="310" height="210" background="http://moodle.smuc.edu.et/students/image/OurVisionNull.jpg"></td>
