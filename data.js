@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="http://moodle.smuc.edu.et/students/style.css">
 
 <style type="text/css">
+  #center1 {
+    display:grid;}
+  #center2 {display:grid;}
   <!--
     body {
       margin:0;
