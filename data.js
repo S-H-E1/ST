@@ -17,6 +17,7 @@
       margin:0;
       padding:0;
       font:  11px/1.5em Verdana;
+      background: white;
   }
   
   h2 {
