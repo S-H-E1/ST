@@ -13,7 +13,7 @@
     background:none!important;
     display:grid;
   }
-  #center2 {display:grid;}
+  #center2 {display:grid;background:none!important;}
   <!--
     body {
       margin:0;
