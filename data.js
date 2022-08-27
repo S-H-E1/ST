@@ -164,11 +164,11 @@ console.log("error 323");
      <table cellspacing="0" cellpadding="1">
         <tbody><tr> 
           <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Login Id:</strong></font></td>
-          <td align="left"><input type="text" name="username" id="ID" size="20"></td>
+          <td align="left"><input type="text" name="ID" id="ID" size="20"></td>
         </tr>
         <tr> 
           <td width="34%" align="left"><font size="2" face="Times New Roman, Times, serif" color="#004488"><strong>Password:</strong></font></td>
-          <td align="left"><input type="password" id="PASS" name="password" size="20"></td>
+          <td align="left"><input type="password" id="PASS" name="PASS" size="20"></td>
         </tr>
      </tbody></table>
  
