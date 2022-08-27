@@ -10,7 +10,9 @@
 
 <style type="text/css">
   #center1 {
-    display:grid;}
+    background:none!important;
+    display:grid;
+  }
   #center2 {display:grid;}
   <!--
     body {
